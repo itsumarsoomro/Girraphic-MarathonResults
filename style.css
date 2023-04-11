@@ -107,7 +107,7 @@ section{
 }
 .table-wrapper2{
        overflow-y: auto;
-       overflow-x: hidden;
+       overflow-x: auto;
        margin: auto; 
        max-height: 700px; 
        max-width: 1250px;
