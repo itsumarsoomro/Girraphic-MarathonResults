@@ -18,17 +18,14 @@
        background-color: rgb(254,180,4);
        color: black;
        cursor: pointer;
-       /* padding: 15px; */
        padding: 3px 8px;
        border-radius: 100%;
        transition: all 0.5s;
      }
-     
-     #myBtn:hover {
+#myBtn:hover {
        background-color: #b1aaaa;
        color: white;
      }
-
 header{
        background-color: black;
        max-width: 100%;
@@ -63,15 +60,14 @@ header{
 }
 section{
        background-color: black;
-       height: 980px;
+       height: 960px;
        position: relative;
        padding: 80px 0px;
 }
 .table-wrapper1{
        margin: auto;
        overflow-y: auto;  
-       max-width: 1200px;
-
+       max-width: 1250px;
 }
 .info-head{
        font-size: 25px;
@@ -84,7 +80,7 @@ section{
 }
 .info-table{
        height: 100px;
-       width: 1200px;
+       width: 1250px;
        background-color: aliceblue;
        color: white;
        border-collapse: collapse; 
@@ -110,31 +106,38 @@ section{
        border-bottom-right-radius: 15px; 
 }
 .table-wrapper2{
-       margin: auto;
-       max-height: 680px;
-       overflow-y: auto;  
-       width: 1200px; 
+       overflow-y: auto;
+       overflow-x: hidden;
+       margin: auto; 
+       max-height: 700px; 
+       max-width: 1250px;
        border-radius: 12px;
+}
+.t-result{
+       margin: auto;
+       background-color: white;
+       padding: 10px 10px;
+       border-collapse: collapse;
+       width: 1250px;
+       height: 600px;
+       
+     
 }
 .res-head{
        font-size: 25px;
        border-bottom: 1px solid ; 
        border-bottom-style: dashed;  
        background-color: rgb(255, 179, 1);
-       padding: 20px 0px;
+       padding: 20px 10px;
        position: sticky;
-}
-.t-result{
-       background-color: white;
-       padding: 10px 10px;
-       border-collapse: collapse;
+       top: 0px;
+       border-top-left-radius: 12px;
+       border-top-right-radius: 12px;
 }
 .th-elements{
        background-color: rgb(228, 165, 18);
        color: rgb(48, 46, 46);
-       padding: 20px 30px;
-       position: sticky;
-       top: 0px;
+       padding: 20px 10px;  
 }
 .th-elements--sort{
        cursor: pointer;
@@ -144,10 +147,9 @@ tr, td{
        background-color: white;
        padding: 10px 20px;
        text-align: center;
-       /* border-radius: 20px; */
        border: 0px solid black;
-      
-
+       border-bottom-left-radius: 15px;
+       border-bottom-right-radius: 15px;
 }
 .dwnld-div{
        display: flex;
@@ -159,7 +161,7 @@ tr, td{
        font-size: 16px;
        position: relative;
        margin-top: 30px;
-       margin-right: 160px;
+       margin-right: 130px;
        padding: 12px 24px;
        font-weight: 600;
        background: #fff;
@@ -187,14 +189,11 @@ tr, td{
 #d2-btn:hover .border{
        transition: 0.3s;  
        color: black;
-
        display: block;
        width: 9.5em;
        height: 3.1em;
-
        border: 2px rgb(255, 179, 1) solid;
 }
-
 .full-rounded {
        border-radius: 2em;
 }
@@ -212,3 +211,8 @@ tr, td{
        text-align: center;
        padding-bottom: 30px;
 }
+@media only screen and (min-width: 1880px){
+    #d2-btn {
+        margin-right: 320px;
+    }
+    }

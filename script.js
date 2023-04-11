@@ -44,12 +44,12 @@ function raceInfo(dataa){
 let raceInfo = document.getElementById("race-info")
 	let rows = `
 	<tr>
-					<td>${dataa.raceStatus}</td>
-					<td>${dataa.gender}</td>
-					<td>${dataa.racename}</td>
-					<td>${dataa.tod}</td>
-					<td>${dataa.lastupdated}</td>
-					<td>${dataa.racelength}</td>
+		<td>${dataa.raceStatus}</td>
+		<td>${dataa.gender}</td>
+		<td>${dataa.racename}</td>
+		<td>${dataa.tod}</td>
+		<td>${dataa.lastupdated}</td>
+		<td>${dataa.racelength}</td>
 	</tr>
 	`
 	raceInfo.innerHTML += rows;
@@ -91,16 +91,16 @@ raceResults.innerHTML = ''
 // populating the table by for loop so in case new data is added in json the table will be updated by itself!
 for (let i = 0; i < data.length; i++){
 	let row = `<tr>
-					<td>${data[i].rank}</td>
-					<td>${data[i].firstname}</td>
-					<td>${data[i].surname}</td>
-					<td>${data[i].athleteid}</td>
-					<td>${data[i].finishtime}</td>
-					<td>${data[i].raceprogress}</td>
-					<td>${data[i].teamname}</td>
-					<td>${data[i].bibnumber}</td>
-					<td>${data[i].flag}</td>
-					<td>${data[i].countryname}</td>
+				<td>${data[i].rank}</td>
+				<td>${data[i].bibnumber}</td>
+				<td>${data[i].athleteid}</td>
+				<td>${data[i].firstname}</td>
+				<td>${data[i].surname}</td>			
+				<td>${data[i].teamname}</td>				
+				<td>${data[i].countryname}</td>
+				<td>${data[i].flag}</td>
+				<td>${data[i].raceprogress}</td>
+				<td>${data[i].finishtime}</td>
 			</tr>`
 	raceResults.innerHTML += row
 
@@ -110,7 +110,7 @@ for (let i = 0; i < data.length; i++){
 
 
 
-// exporting formating csv
+// exporting formated csv
 getResults().then(data => {
 
 // structured csv file to be exported
