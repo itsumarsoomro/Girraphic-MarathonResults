@@ -1,0 +1,214 @@
+*{
+       padding: 0px;
+       margin: 0px;
+       list-style: none;
+       font-family: 'Overpass', sans-serif;
+       scroll-behavior: smooth;
+}
+/* to the top button style */
+#myBtn {
+       display: none;
+       position: fixed;
+       bottom: 20px;
+       right: 30px;
+       z-index: 99;
+       font-size: 18px;
+       border: none;
+       outline: none;
+       background-color: rgb(254,180,4);
+       color: black;
+       cursor: pointer;
+       /* padding: 15px; */
+       padding: 3px 8px;
+       border-radius: 100%;
+       transition: all 0.5s;
+     }
+     
+     #myBtn:hover {
+       background-color: #b1aaaa;
+       color: white;
+     }
+
+header{
+       background-color: black;
+       max-width: 100%;
+       max-height: 100px;
+       display: flex;
+       position: relative;
+       justify-content: space-around;
+}
+.logo{
+       max-height: 60px;
+       margin: 10px 0px;
+       cursor: pointer;
+}
+.link-box ul{
+       display: flex;
+        margin-top: 30px;
+}
+.nav-links a{
+       text-decoration: none;
+       list-style: none;
+       color: white;
+       margin: 0px 30px;
+}
+.nav-links a:hover{
+       opacity: 80%;
+}
+.info-panel{
+       max-height: 150px;
+       margin: 20px;
+       font-weight: 600;
+       margin-left: 330px;
+}
+section{
+       background-color: black;
+       height: 980px;
+       position: relative;
+       padding: 80px 0px;
+}
+.table-wrapper1{
+       margin: auto;
+       overflow-y: auto;  
+       max-width: 1200px;
+
+}
+.info-head{
+       font-size: 25px;
+       border-bottom: 1px solid;
+       border-bottom-style: dashed;
+       border-top-left-radius: 12px;
+       border-top-right-radius: 12px;
+       background-color: rgb(255, 179, 1);
+       color: black;
+}
+.info-table{
+       height: 100px;
+       width: 1200px;
+       background-color: aliceblue;
+       color: white;
+       border-collapse: collapse; 
+       margin-bottom: 30px;
+       margin-top: 30px;
+       border-radius: 12px;
+}
+.it-components{
+       padding: 10px 10px;
+       color: white;
+      
+}
+.it-components > tr {
+       background-color: rgb(228, 165, 18);
+       
+}
+.it-components > tr > th{
+       padding: 20px 0px; 
+}
+#race-info > tr > td{
+       padding: 20px 0px;
+       border-bottom-left-radius: 15px;
+       border-bottom-right-radius: 15px; 
+}
+.table-wrapper2{
+       margin: auto;
+       max-height: 680px;
+       overflow-y: auto;  
+       width: 1200px; 
+       border-radius: 12px;
+}
+.res-head{
+       font-size: 25px;
+       border-bottom: 1px solid ; 
+       border-bottom-style: dashed;  
+       background-color: rgb(255, 179, 1);
+       padding: 20px 0px;
+       position: sticky;
+}
+.t-result{
+       background-color: white;
+       padding: 10px 10px;
+       border-collapse: collapse;
+}
+.th-elements{
+       background-color: rgb(228, 165, 18);
+       color: rgb(48, 46, 46);
+       padding: 20px 30px;
+       position: sticky;
+       top: 0px;
+}
+.th-elements--sort{
+       cursor: pointer;
+}
+tr, td{
+       color: black;
+       background-color: white;
+       padding: 10px 20px;
+       text-align: center;
+       /* border-radius: 20px; */
+       border: 0px solid black;
+      
+
+}
+.dwnld-div{
+       display: flex;
+       position: relative;
+       align-items: center;
+       justify-content: flex-end;
+} 
+#d2-btn{
+       font-size: 16px;
+       position: relative;
+       margin-top: 30px;
+       margin-right: 160px;
+       padding: 12px 24px;
+       font-weight: 600;
+       background: #fff;
+       transition: all 0.1s linear;
+       box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+       border-radius: 2em;
+       cursor: pointer;   
+}   
+#d2-btn.active{
+       transform: scale(1);
+}
+#d2-btn .border {
+       position: absolute;
+       border: 0.15em solid #fff;
+       transition: all 0.2s 0.06s linear;
+       top: 50%;
+       left: 50%;
+       width: 8.5em;
+       height: 2.7em;
+       transform: translate(-50%, -50%);
+      }
+#d2-btn:hover{
+       opacity:  86%;
+}
+#d2-btn:hover .border{
+       transition: 0.3s;  
+       color: black;
+
+       display: block;
+       width: 9.5em;
+       height: 3.1em;
+
+       border: 2px rgb(255, 179, 1) solid;
+}
+
+.full-rounded {
+       border-radius: 2em;
+}
+.footer-container{
+       background-color: rgb(37, 36, 36);
+       min-height: 250px;
+       display: flex;
+       position: relative;
+       justify-content: space-around;
+       padding-top: 50px;
+}
+.copyright{
+       background-color: rgb(37, 36, 36);
+       color: white;
+       text-align: center;
+       padding-bottom: 30px;
+}

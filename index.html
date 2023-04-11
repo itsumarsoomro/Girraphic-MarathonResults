@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marathon Results | Girraphic</title>
+    <!-- linking css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- connecting javascript -->
+    <script src="script.js" defer></script>
+    <!-- fav icon in png format -->
+    <link rel="icon" type="image/png" href="Images/logo.jpeg" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- linking npm export-from-json package -->
+    <script src="https://unpkg.com/export-from-json/dist/umd/index.min.js"></script>
+  </head>
+  <body>
+    <!-- to the top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="Images/top arrow.png" alt="Top" height="30px" width="28px" />
+    </button>
+    <!-- header -->
+    <header>
+      <div class="logo-box">
+        <img class="logo" src="Images/logo.png" alt="" />
+      </div>
+      <div class="link-box">
+        <ul>
+          <li class="nav-links"><a href="#"> Home </a></li>
+          <li class="nav-links"><a href="#">About </a></li>
+          <li class="nav-links"><a href="#">Work </a></li>
+          <li class="nav-links"><a href="#">Services </a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- info pannel -->
+    <div class="info-panel">
+      <p class="ip-des">RESULTS</p>
+    </div>
+
+    <!-- main body sections for both tables -->
+    <section>
+      <!-- info table #1 -->
+      <div class="table-wrapper1">
+        <table class="info-table">
+          <thead class="it-components">
+            <tr>
+              <th class="info-head" colspan="6">Race Information</th>
+            </tr>
+
+            <tr>
+              <th>Status</th>
+              <th>Gender</th>
+              <th>Race name</th>
+              <th>tod</th>
+              <th>Last updated</th>
+              <th>Race length</th>
+            </tr>
+          </thead>
+          <!-- body of info table -->
+          <tbody id="race-info" style="color: black"></tbody>
+        </table>
+      </div>
+
+      <!-- Results table #2 -->
+      <div class="table-wrapper2">
+        <table class="t-result">
+          <thead class="t-head">
+            <tr>
+              <th class="res-head" colspan="10">Race Results</th>
+            </tr>
+            <tr class="th-tags">
+              <th
+                class="th-elements th-elements--sort"
+                data-column="rank"
+                data-order="aesc"
+              >
+                Rank
+              </th>
+              <th class="th-elements">Firstname</th>
+              <th class="th-elements">Surname</th>
+              <th class="th-elements">Athlete ID</th>
+              <th class="th-elements">Finish time</th>
+              <th class="th-elements">Race progress</th>
+              <th class="th-elements">Team</th>
+              <th
+                class="th-elements th-elements--sort"
+                data-column="bib"
+                data-order="aesc"
+              >
+                Bib
+              </th>
+              <th class="th-elements">Flag</th>
+              <th class="th-elements">Country</th>
+            </tr>
+          </thead>
+          <!-- body of info table -->
+          <tbody id="race-results" style="color: white"></tbody>
+        </table>
+      </div>
+      <!-- download btn -->
+      <div class="dwnld-div">
+        <button id="d2-btn">
+          <span> Export CSV </span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2623/2623002.png"
+            alt=""
+            height="12px"
+            width="12px"
+          />
+
+          <div class="border full-rounded"></div>
+        </button>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="logo-box">
+          <img class="logo" src="Images/logo.png" alt="" />
+        </div>
+        <div class="link-box">
+          <ul>
+            <li class="nav-links"><a href="#"> Home </a></li>
+            <li class="nav-links"><a href="#">About </a></li>
+            <li class="nav-links"><a href="#">Work </a></li>
+            <li class="nav-links"><a href="#">Services </a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- copyright line -->
+      <p class="copyright">© GIRRAPHIC 2023</p>
+    </footer>
+  </body>
+</html>
